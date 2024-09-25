@@ -1,9 +1,9 @@
-# 날짜를 입력받음
-date_input = input()
+# 변수 선언, 입력
+inp = input()
+arr = inp.split(".")
+y = int(arr[0])
+m = int(arr[1])
+d = int(arr[2])
 
-# yyyy, mm, dd로 나누기
-yyyy, mm, dd = date_input.split('.')
-
-# mm-dd-yyyy 형식으로 출력
-result = f"{mm}-{dd}-{yyyy}"
-print(result)
+# 출력
+print(f"{m}-{d}-{y}")
